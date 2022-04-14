@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.container
+    //- input#nameSearch(type='text' onkeyup="searchTable('nameSearch', 0)" placeholder='Search by names' title='Type in a name')
+    //- input#brandSearch(type='text' onkeyup="searchTable('brandSearch', 1)" placeholder='Search by brand' title='Type in a brand')
+    //- input#shopSearch(type='text' onkeyup="searchTable('shopSearch', 4)" placeholder='Search by shop' title='Type in a skateshop')
+
+    table 
+      thead 
+        tr
+          td='Name'
+          td='Brand'
+          td='Price'
+          td='Image'
+      each p in products
+        tr(onclick=("window.location="))
+          td=p[6]
+          td=p[5]
+          td=p[7]
+          td(scope="row")
+            img(src=p[3])
+          

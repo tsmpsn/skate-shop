@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="table.css">
+    <!-- <script type="text/javascript" src="bundle.js"></script> -->
+    <script data-main="scripts/index" src="scripts/require.js"></script>
+    
+</head>
+
+<body>
+    <input type="text" id="nameSearch" onkeyup="searchTable('nameSearch', 0)" placeholder="Search by names" title="Type in a name">
+    <input type="text" id="brandSearch" onkeyup="searchTable('brandSearch', 1)" placeholder="Search by brand" title="Type in a brand">
+    <input type="text" id="shopSearch" onkeyup="searchTable('shopSearch', 4)" placeholder="Search by shop" title="Type in a skateshop">
+    <div class="feed" style="display: block;">
+        <table id="feedTable" class="feedTable">
+            <thead class="feedTableHead">
+                <tr class="feedTableHeaderRow">
+                    <th onclick="sortTable(0)">Item Name</th>
+                    <th onclick="sortTable(1)">Brand</th>
+                    <th onclick="sortByPrice(2)">Price</th>
+                    <th onclick="sortTable(3)">Size</th>
+                    <th onclick="sortTable(4)">Shop</th>
+                    <th onclick="sortTable(5)">Type</th>
+                </tr>
+            </thead>
+            <tbody class="feedTable-Body"></tbody>
+            <tr>
+                <td>Last Resort AB VM003</td>
+                <td>Last Resort AB</td>
+                <td>70</td>
+                <td>44EU</td>
+                <td>Bonkers Frankfurt</td>
+                <td>Shoes</td>
+            </tr>
+            <tr>
+                <td>not nike</td>
+                <td>something else</td>
+                <td>950</td>
+                <td>449EU</td>
+                <td>Bonkers Frankfurt</td>
+                <td>tops</td>
+            </tr>
+            <tr>
+                <td>my globe shoes</td>
+                <td>Globe</td>
+                <td>52</td>
+                <td>44EU</td>
+                <td>Barrios</td>
+                <td>Shoes</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>391</td>
+                <td>maybe</td>
+                <td>nope</td>
+                <td>zoy</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
