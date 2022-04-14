@@ -6,25 +6,3 @@ body {
 a {
   color: #00B7FF;
 }
-
-table
-{
-    width: 100%;
-}
-
-th
-{
-    background-color: rgb(103, 105, 103);
-    color:antiquewhite;
-}
-
-tr
-{
-    width: 20%;
-}
-
-tr:nth-child(odd)
-{
-    background-color: antiquewhite;
-    /* color:rgb(103, 105, 103); */
-}
